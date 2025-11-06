@@ -5,6 +5,11 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+
+export function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export function formattedSourceText(inputText: string) {
   return inputText
     .replace(/\n+/g, " ") // Replace multiple consecutive new lines with a single space

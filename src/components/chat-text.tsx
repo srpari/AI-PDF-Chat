@@ -15,7 +15,7 @@ import {
 } from "../components/ui/accordion";
 import { UIMessage } from "ai";
 import ReactMarkdown from "react-markdown";
-import { formattedSourceText } from "../components/lib/utils";
+import { formattedSourceText } from "../lib/utils";
 
 const wrappedText = (text: string) =>
   text.split("\n").map((line, i) => (
